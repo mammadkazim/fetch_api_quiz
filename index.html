@@ -1,92 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 30px;
-        }
-
-        .quizQuestion {
-            color: black;
-            font-size: 25px;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-        .quizWrapper {
-            margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 50px;
-            text-align: center;
-            color: red;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .quizOption {
-			font-size: 18px;
-            height: 60px;
-            background-color: blue;
-            color: #fff;
-            text-align: center;
-            border-radius: 8px;
-            line-height: 60px;
-            letter-spacing: 1px;
-            box-shadow: 0px 7px 5px grey;
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-        }
-        .quizOption:hover{
-            opacity: 0.7;
-        }
-        .quizOption.active{
-            background-color: darkblue;
-            opacity: 1;
-        }
-        button {
-            height: 35px;
-            background-color: black;
-            color: #fff;
-            border-radius: 10px;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 16px;
-        }
-
-        .quizResult {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            margin-bottom: 10px;
-        }
-        .tryAgain, .showResults{
-            display: none;
-            margin: 10px auto;
-        }
-        .quizTrue, .quizFalse {
-            height: 30px;
-            width: 30px;
-            border-radius: 10px;
-            background-color: green;
-            color: #fff;
-            margin-left: 10px;
-            line-height: 30px;
-        }
-
-        .quizFalse {
-            background-color: red;
-        }
-    </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -103,10 +26,16 @@
         </div>
         <button class="checkAnswer">Check Answer</button>
         <button class="tryAgain"> Try Again</button>
-        <button class="showResults">Show results</button>
+        <button class="showResults">Show Results</button>
     </div>
-    
+    <div class="resultsContainer">
+        <div class="resultsHeading"></div>
+        <div class="questionsContainer">
+        </div>
+    </div>
+
 
     <script src="app.js"></script>
 </body>
+
 </html>
